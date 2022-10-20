@@ -8,10 +8,13 @@ public class House {
     // numOfRooms
     // numOfRestrooms
     // area
-    // garden
-    // parking
-    // garage
-    // camera
+    // hadGarden
+    // hasParking
+    // hasGarage
+    // hasCamera
     // color
+    // price
+    // address
+
 
 }

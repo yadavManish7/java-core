@@ -4,15 +4,17 @@ public class BankAccount {
 
     //States
 
-    // ssn
+    // ssnNumber
+    //accountNumber
+    //accountBalance
     // accountType
-    // loan
+    // loanType
     // interestRate
     // address
     // branch
     // serviceFees
-    // creditCard
-    // directDeposit
+    // creditCardType
+
 
 
 }

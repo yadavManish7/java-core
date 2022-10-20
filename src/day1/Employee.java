@@ -5,6 +5,7 @@ public class Employee {
     // states
 
     // empId
+    //salary
     // firstName
     // lastName
     // personalEmail
@@ -14,7 +15,7 @@ public class Employee {
     // address
     // department
     // manager
-    // device
+    // devices
 
 
 }
