@@ -16,5 +16,19 @@ public class House {
     // price
     // address
 
+    //Behaviours
+
+    // viewDetails()
+    // rentHouse()
+    // buyHouse()
+    // sellHouse()
+    // reviews()
+    // comments()
+    // minPrice()
+    // maxPrice()
+    // filter()
+    // help()
+    // signIn()
+    // signOut
 
 }

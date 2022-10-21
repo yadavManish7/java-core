@@ -5,7 +5,7 @@ public class Employee {
     // states
 
     // empId
-    //salary
+    // salary
     // firstName
     // lastName
     // personalEmail
@@ -17,5 +17,14 @@ public class Employee {
     // manager
     // devices
 
+    // Behaviours
+
+    // empDetails()
+    // updateDetail()
+    // applyLeave()
+    // empLogIn()
+    // empLogOut()
+    // contactSupport()
+    // changePassword()
 
 }

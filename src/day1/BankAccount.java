@@ -5,8 +5,8 @@ public class BankAccount {
     //States
 
     // ssnNumber
-    //accountNumber
-    //accountBalance
+    // accountNumber
+    // accountBalance
     // accountType
     // loanType
     // interestRate
@@ -15,6 +15,22 @@ public class BankAccount {
     // serviceFees
     // creditCardType
 
+    //Behaviours
+
+    // createAccount()
+    // logIn()
+    // logOut()
+    // closeAccount()
+    // withdrawAmount()
+    // totalBalance()
+    // viewDetails()
+    // makeTransfer()
+    // depositAmount()
+    // updateInfo()
+    // accountAlert()
+    // suspendAccount()
+    // invest()
+    // billPay()
 
 
 }
