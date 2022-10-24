@@ -4,16 +4,16 @@ public class BankAccount {
 
     //States
 
-    // ssnNumber
-    // accountNumber
-    // accountBalance
-    // accountType
-    // loanType
-    // interestRate
-    // address
-    // branch
-    // serviceFees
-    // creditCardType
+    int ssnNumber;
+    int accountNumber;
+    float accountBalance;
+    String accountType;
+    String loanType;
+    float interestRate;
+    String address;
+    String branch;
+    int serviceFees;
+    String creditCardType;
 
     //Behaviours
 

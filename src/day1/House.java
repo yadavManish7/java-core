@@ -4,17 +4,17 @@ public class House {
 
     //states
 
-    // floorPlan
-    // numOfRooms
-    // numOfRestrooms
-    // area
-    // hadGarden
-    // hasParking
-    // hasGarage
-    // hasCamera
-    // color
-    // price
-    // address
+    int floorPlan;
+    int numOfRooms;
+    int numOfRestrooms;
+    float area;
+    boolean hadGarden;
+    boolean hasParking;
+    boolean hasGarage;
+    boolean hasCamera;
+    String color;
+    float price;
+    String address;
 
     //Behaviours
 

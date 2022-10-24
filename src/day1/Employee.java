@@ -4,18 +4,18 @@ public class Employee {
 
     // states
 
-    // empId
-    // salary
-    // firstName
-    // lastName
-    // personalEmail
-    // workEmail
-    // contact
-    // emergencyContact
-    // address
-    // department
-    // manager
-    // devices
+    int empId;
+    float salary;
+    String firstName;
+    String lastName;
+    String personalEmail;
+    String workEmail;
+    String contact;
+    String  emergencyContact;
+    String address;
+    String  department;
+    String manager;
+    int devices;
 
     // Behaviours
 
