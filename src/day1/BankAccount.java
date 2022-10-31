@@ -7,13 +7,14 @@ public class BankAccount {
     int ssnNumber;
     int accountNumber;
     float accountBalance;
-    String accountType;
+    String accountType;  // String is class data type
     String loanType;
     float interestRate;
     String address;
     String branch;
     int serviceFees;
     String creditCardType;
+    CustomerInfo customerInfo;  // CustomerInfo is class data type
 
     //Behaviours
 
