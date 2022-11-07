@@ -10,7 +10,7 @@ public class CustomerInfo {
      private Address cusAddress;
 
 
-    public String customerName() {
+    public String getCustomerName() {
         return customerName;
     }
 
@@ -18,7 +18,7 @@ public class CustomerInfo {
         this.customerName = customerName;
     }
 
-    public String phoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -26,7 +26,7 @@ public class CustomerInfo {
         this.phoneNumber = phoneNumber;
     }
 
-    public String email() {
+    public String getEmail() {
         return email;
     }
 
@@ -34,7 +34,7 @@ public class CustomerInfo {
         this.email = email;
     }
 
-    public Address address() {
+    public Address getAddress() {
         return cusAddress;
     }
 

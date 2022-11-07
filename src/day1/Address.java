@@ -7,7 +7,7 @@ public class Address {
      private String state;
      private String city;
 
-    public String streetAddress() {
+    public String getStreetAddress() {
         return streetAddress;
     }
 
@@ -15,7 +15,7 @@ public class Address {
         this.streetAddress = streetAddress;
     }
 
-    public String areaZipCode() {
+    public String getAreaZipCode() {
         return areaZipCode;
     }
 
@@ -23,7 +23,7 @@ public class Address {
         this.areaZipCode = areaZipCode;
     }
 
-    public String state() {
+    public String getState() {
         return state;
     }
 
@@ -31,7 +31,7 @@ public class Address {
         this.state = state;
     }
 
-    public String city() {
+    public String getCity() {
         return city;
     }
 

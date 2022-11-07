@@ -26,7 +26,7 @@ public class BankAccount {
         this.accountNumber = accountNumber;
     };  // to set/modify data
 
-    public float accountBalance() {
+    public float getAccountBalance() {
         return accountBalance;
     }
 
@@ -37,7 +37,7 @@ public class BankAccount {
         this.accountBalance = accountBalance;
     }
 
-    public String accountType() {
+    public String getAccountType() {
         return accountType;
     }
 
@@ -45,7 +45,7 @@ public class BankAccount {
         this.accountType = accountType;
     }
 
-    public String loanType() {
+    public String getLoanType() {
         return loanType;
     }
 
@@ -53,7 +53,7 @@ public class BankAccount {
         this.loanType = loanType;
     }
 
-    public float interestRate() {
+    public float getInterestRate() {
         return interestRate;
     }
 
@@ -61,7 +61,7 @@ public class BankAccount {
         this.interestRate = interestRate;
     }
 
-    public String BankAddress() {
+    public String getBankAddress() {
         return bankAddress;
     }
 
@@ -69,7 +69,7 @@ public class BankAccount {
         this.bankAddress = address;
     }
 
-    public String branch() {
+    public String getBranch() {
         return branch;
     }
 
@@ -77,7 +77,7 @@ public class BankAccount {
         this.branch = branch;
     }
 
-    public int serviceFees() {
+    public int getServiceFees() {
         return serviceFees;
     }
 
@@ -85,7 +85,7 @@ public class BankAccount {
         this.serviceFees = serviceFees;
     }
 
-    public String creditCardType() {
+    public String getCreditCardType() {
         return creditCardType;
     }
 
@@ -93,7 +93,7 @@ public class BankAccount {
         this.creditCardType = creditCardType;
     }
 
-    public CustomerInfo customerInfo() {
+    public CustomerInfo getCustomerInfo() {
         return customerInfo;
     }
 
@@ -103,6 +103,11 @@ public class BankAccount {
 
 
     //Behaviours
+
+    public static void transferAmount(BankAccount fromAccount, BankAccount toAccount){
+        fromAccount.accountBalance = fromAccount.accountBalance - 200;
+        toAccount.accountBalance = toAccount.accountBalance + 200;
+    }
 
     // createAccount()
     // logIn()
