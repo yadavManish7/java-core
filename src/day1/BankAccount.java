@@ -103,6 +103,7 @@ public class BankAccount {
 
 
     //Behaviours
+    // you can create function based on your architecture
 
     public void transferAmount(BankAccount fromAccount, BankAccount toAccount, float amountToTransfer){
         fromAccount.setAccountBalance(fromAccount.getAccountBalance()-amountToTransfer);
