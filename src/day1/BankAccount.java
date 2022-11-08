@@ -104,9 +104,20 @@ public class BankAccount {
 
     //Behaviours
 
-    public static void transferAmount(BankAccount fromAccount, BankAccount toAccount){
-        fromAccount.accountBalance = fromAccount.accountBalance - 200;
-        toAccount.accountBalance = toAccount.accountBalance + 200;
+    public void transferAmount(BankAccount fromAccount, BankAccount toAccount, float amountToTransfer){
+        fromAccount.setAccountBalance(fromAccount.getAccountBalance()-amountToTransfer);
+        toAccount.setAccountBalance(toAccount.getAccountBalance()+amountToTransfer);
+
+        //since it is in the same class you can do below code as wee:
+
+        //fromAccount.accountBalance = fromAccount.accountBalance-amountToTransfer;
+        //toAccount.accountBalance = toAccount.accountBalance - amountToTransfer;
+    }
+
+    public void depositAmount(BankAccount accountToDeposit, float amount){
+        accountToDeposit.setAccountBalance(accountToDeposit.getAccountBalance() + amount);
+        System.out.println("Account number " + accountToDeposit.getAccountNumber() + " has " + accountToDeposit.getAccountBalance());
+        System.out.println("Account holder " + accountToDeposit.getCustomerInfo().getCustomerName() + " has " + accountToDeposit.getAccountBalance());
     }
 
     // createAccount()

@@ -42,6 +42,7 @@ public class BankingApplication {
         System.out.println("Customer contact : " + manishInfo.getPhoneNumber());
         System.out.println("Customer address : " + cusAddress.getStreetAddress());
         System.out.println("Account balance : " + manishAccount.getAccountBalance());
+        System.out.println();
 
         BankAccount mikeAccount = new BankAccount();
         mikeAccount.setAccountNumber("122345763398");
@@ -64,6 +65,29 @@ public class BankingApplication {
         System.out.println("Customer address : " + mikeAddress.getStreetAddress());
         System.out.println("Customer name : " + mikeInfo.getCustomerName());
         System.out.println("Account Balance : " + mikeAccount.getAccountBalance());
+        System.out.println();
+
+        //without function or abstraction
+        System.out.println("***without function demo****");
+
+        float amountToTransfer = 500f;
+        manishAccount.setAccountBalance(manishAccount.getAccountBalance()-amountToTransfer);
+        mikeAccount.setAccountBalance(mikeAccount.getAccountBalance()+amountToTransfer);
+
+        System.out.println("Manish account balance : " + manishAccount.getAccountBalance());
+        System.out.println("Mike account balance : " + mikeAccount.getAccountBalance());
+        System.out.println();
+
+        System.out.println("with function");
+
+        BankAccount dummyAcc = new BankAccount(); //to call a function inside a class, you need to create an object
+        dummyAcc.transferAmount(manishAccount,mikeAccount,500f);
+        System.out.println("Manish account balance : " + manishAccount.getAccountBalance());
+        System.out.println("Mike account balance : " + mikeAccount.getAccountBalance());
+        System.out.println();
+
+        dummyAcc.depositAmount(manishAccount,1000f);
+
 
 
     }
