@@ -16,6 +16,9 @@ public class BankingApplication {
         manishAccount.setBankAddress("2147 Northgate Rd, Irving,TX");
         //manishAccount.serviceFees = 10;
         manishAccount.setServiceFees(10);
+        //maishAccount.accountType = "FIXED_DEPOSIT"
+        manishAccount.setAccountType(AccountType.FIXED_DEPOSIT);
+
         CustomerInfo manishInfo = new CustomerInfo();  // creating obj of custom datatype to store values for variables
         //accountObjInfo.customerName = "Mike John";
         manishInfo.setCustomerName("Manish Yadav");

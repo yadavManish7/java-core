@@ -7,7 +7,7 @@ public class BankAccount {
     private String ssnNumber;
     private String accountNumber;
     private float accountBalance;
-    private String accountType;  // String is class data type
+    private AccountType accountType;  // String is class data type
     private String loanType;
     private float interestRate;
     private String bankAddress;
@@ -37,11 +37,11 @@ public class BankAccount {
         this.accountBalance = accountBalance;
     }
 
-    public String getAccountType() {
+    public AccountType getAccountType() {
         return accountType;
     }
 
-    public void setAccountType(String accountType) {
+    public void setAccountType(AccountType accountType) {
         this.accountType = accountType;
     }
 

@@ -4,7 +4,9 @@ public class PolymorphismDemo {
 
     public static void main(String[] args) {
 
-        add(2,3f);
+        add(2,3f); // implicit conversion
+        add(5f,5f);
+        add(4,3);
 
     }
     public static void add(int a, int b){
