@@ -1,0 +1,5 @@
+package day3.inheritancedemo;
+
+public enum Rank {
+    ASSISTANT_PROFESSOR,ASSOCIATE_PROFESSOR,PROFESSOR,RESEARCH_ASSISTANCE
+}
