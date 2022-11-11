@@ -22,6 +22,11 @@ public class CollegeApp {
         staff.setName("Arun");
         staff.setTitle(Title.DEPARTMENT_HEAD);
 
+        System.out.println(person);
+        System.out.println(student);
+        System.out.println(staff);
+        System.out.println(faculty);
+        System.out.println(employee);
 
 
     }

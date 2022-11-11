@@ -23,8 +23,8 @@ public class Faculty extends Employee{
 
     @Override
     public String toString() {
-        return "Faculty{" +
-                "officeHr='" + officeHr + '\'' +
+        return "Faculty{" + "name=" + getName() + ", phoneNum=" + getPhoneNum() +
+                ", officeHr='" + officeHr + '\'' +
                 ", rank=" + rank +
                 '}';
     }
