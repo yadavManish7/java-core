@@ -105,14 +105,10 @@ public class BankAccount {
     //Behaviours
     // you can create function based on your architecture
 
-    public void transferAmount(BankAccount fromAccount, BankAccount toAccount, float amountToTransfer){
-        fromAccount.setAccountBalance(fromAccount.getAccountBalance()-amountToTransfer);
+    public void transferAmount(BankAccount toAccount, float amountToTransfer){
+        this.setAccountBalance(this.getAccountBalance()-amountToTransfer);
         toAccount.setAccountBalance(toAccount.getAccountBalance()+amountToTransfer);
 
-        //since it is in the same class you can do below code as wee:
-
-        //fromAccount.accountBalance = fromAccount.accountBalance-amountToTransfer;
-        //toAccount.accountBalance = toAccount.accountBalance - amountToTransfer;
     }
 
     public void depositAmount(BankAccount accountToDeposit, float amount){
