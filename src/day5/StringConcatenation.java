@@ -17,7 +17,7 @@ public class StringConcatenation {
         builder.append("Hello ");
         builder.append(name);
         builder.append(", Good Morning!!");
-        String message4 = builder.toString();
+        String message4 = builder.toString();    //Creates less Objects
         System.out.println("Builder class = "+message4);
 
         //String functions()
