@@ -4,7 +4,7 @@ public class BankingApplication {
     public static void main(String[] args) {   // application class contains main method
 
         BankAccount manishAccount = new BankAccount(); // creating object using new keyword
-        manishAccount.setAccountNumber("234384893924");
+        manishAccount.setAccountNumber("234384893924"); // manishAccount is implicit parameter, 234384.. is explicit parameter
         manishAccount.setAccountBalance(5000f);
         manishAccount.setBankAddress("2147 Northgate Rd, Irving,TX");
         manishAccount.setServiceFees(10);
@@ -71,12 +71,12 @@ public class BankingApplication {
         System.out.println("with function");
 
        // BankAccount dummyAcc = new BankAccount(); //to call a function inside a class, you need to create an object
-        manishAccount.transferAmount(mikeAccount,500f);
+        manishAccount.transferAmount(mikeAccount,500f);//manishAccount is implicit parameter
         System.out.println("Manish account balance : " + manishAccount.getAccountBalance());
         System.out.println("Mike account balance : " + mikeAccount.getAccountBalance());
         System.out.println();
 
-        //dummyAcc.depositAmount(manishAccount,1000f);
+        manishAccount.depositAmount(2000f);
 
 
 

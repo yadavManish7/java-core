@@ -105,16 +105,16 @@ public class BankAccount {
     //Behaviours
     // you can create function based on your architecture
 
-    public void transferAmount(BankAccount toAccount, float amountToTransfer){
-        this.setAccountBalance(this.getAccountBalance()-amountToTransfer);
+    public void transferAmount(BankAccount toAccount, float amountToTransfer){ //Implicit parameter
+        this.setAccountBalance(this.getAccountBalance()-amountToTransfer); //this refers to fromAccount
         toAccount.setAccountBalance(toAccount.getAccountBalance()+amountToTransfer);
 
     }
 
-    public void depositAmount(BankAccount accountToDeposit, float amount){
-        accountToDeposit.setAccountBalance(accountToDeposit.getAccountBalance() + amount);
-        System.out.println("Account number " + accountToDeposit.getAccountNumber() + " has " + accountToDeposit.getAccountBalance());
-        System.out.println("Account holder " + accountToDeposit.getCustomerInfo().getCustomerName() + " has " + accountToDeposit.getAccountBalance());
+    public void depositAmount( float amount){
+        this.setAccountBalance(this.getAccountBalance() + amount); //this = manishAccount
+        System.out.println("Account number " + this.getAccountNumber() + " has " + this.getAccountBalance());
+        System.out.println("Account holder " + this.getCustomerInfo().getCustomerName() + " has " + this.getAccountBalance());
     }
 
     // createAccount()
