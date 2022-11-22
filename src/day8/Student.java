@@ -40,8 +40,5 @@ public class Student {
             System.out.println("you have just passed");
         }
 
-
-        scanner.close();
-
     }
 }
