@@ -24,10 +24,20 @@ public class Student {
 
         int total = 500;
         float sum = math+science+history+social+java;
-        System.out.println("Total marks obtained = " + sum);
+        System.out.println(String.format("Total marks obtained %.2f",sum));
         float percent = (sum/total)*100;
-        System.out.println("Percentage = " + percent + "%");
-
+        System.out.println(String.format("Percentage %.2f", percent) + " %");
+        
         scanner.close();
+        
+        if(percent >= 80){
+            System.out.println("You have scored distinction");
+        } else if (percent<80 && percent>=70) {
+            System.out.println("\"You have scored first division");
+        } else if (percent<70 && percent>=60) {
+            System.out.println("You have scored second division");
+        }else {
+            System.out.println("you have just passed");
+        }
     }
 }
