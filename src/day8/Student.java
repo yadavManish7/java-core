@@ -24,6 +24,7 @@ public class Student {
 
         int total = 500;
         float sum = math+science+history+social+java;
+<<<<<<< HEAD
         System.out.println(String.format("Total marks obtained %.2f",sum));
         float percent = (sum/total)*100;
         System.out.println(String.format("Percentage %.2f", percent) + " %");
@@ -39,5 +40,12 @@ public class Student {
         }else {
             System.out.println("you have just passed");
         }
+=======
+        System.out.println("Total marks obtained = " + sum);
+        float percent = (sum/total)*100;
+        System.out.println("Percentage = " + percent + "%");
+
+        scanner.close();
+>>>>>>> 8f0f1c985c9519d97f4651b4a2e4de2ce161473b
     }
 }
