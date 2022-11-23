@@ -21,39 +21,31 @@ public class SwitchDemo {
             default:
                 System.out.println("Invalid day");
         }
-        System.out.println(isWeekend);
+        System.out.println(day + "is weekend = " + isWeekend);
 
-        System.out.println("*****************************************");
-
-        int dayOfWeek=3;
-
-        switch (dayOfWeek){    //switch is faster than if-else
-            case 1:
-                System.out.println("Sunday");
-                break;
-            case 2:
-                System.out.println("Monday");
-                break;
-            case 3:
-                System.out.println("Tuesday");
-                break;
-            case 4:
-                System.out.println("Wednesday");
-                break;
-            case 5:
-                System.out.println("Thursday");
-                break;
-            case 6:
-                System.out.println("Friday");
-                break;
-            case 7:
-                System.out.println("Saturday");
-                break;
-            default:
-                System.out.println("Invalid day");
+ //       System.out.println("*****************************************");
+//        System.out.println("Enhance switch case available in java 17 only");
+//
+//        int dayOfWeek = 3;
+//        switch (dayOfWeek) {    //switch is faster than if-else
+//            case 1 -> System.out.println("Sunday");
+//            case 2 -> System.out.println("Monday");
+//            case 3 -> System.out.println("Tuesday");
+//            case 4 -> System.out.println("Wednesday");
+//            case 5 -> System.out.println("Thursday");
+//            case 6 -> System.out.println("Friday");
+//            case 7 -> System.out.println("Saturday");
+//            default -> System.out.println("Invalid day");
+//        }
+//
+//        String day = "SUNDAY";
+//        boolean isWeekEnd = switch (day) {
+//            case "MONDAY","TUESDAY","WEDNESDAY","FRIDAY" -> false;
+//            case "SATURDAY","SUNDAY" -> true;
+//            default -> false ;
+//        };
+//        System.out.println(day+" is weekend "+isWeekEnd);
 
 
-        }
-
-    }
+   }
 }
