@@ -16,7 +16,16 @@ public class BankAccount {
     private String creditCardType;
     private CustomerInfo customerInfo;  // CustomerInfo is class data type
 
-// Getters and Setters to access data from encapsulation
+    public BankAccount(){}
+
+
+    public BankAccount(String accountNumber, float accountBalance, AccountType accountType) {
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.accountType = accountType;
+    }
+
+    // Getters and Setters to access data from encapsulation
 
     public String getAccountNumber() {
         return accountNumber;
@@ -115,6 +124,15 @@ public class BankAccount {
         this.setAccountBalance(this.getAccountBalance() + amount); //this = manishAccount
         System.out.println("Account number " + this.getAccountNumber() + " has " + this.getAccountBalance());
         System.out.println("Account holder " + this.getCustomerInfo().getCustomerName() + " has " + this.getAccountBalance());
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", accountBalance=" + accountBalance +
+                ", accountType=" + accountType +
+                '}';
     }
 
     // createAccount()
