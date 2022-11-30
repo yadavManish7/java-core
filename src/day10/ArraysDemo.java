@@ -16,9 +16,9 @@ public class ArraysDemo {
         int[] array = new int[5];
         array[0]= 0;
         array[1]=1;
-        array[2]= 2;
+        array[2]=2;
         array[3]=3;
-        array[4]=4;
+        array[4]=5;
         System.out.println("array : "+ Arrays.toString(array));
 
         BankAccount[] account = new BankAccount[3];  //class default value is null
