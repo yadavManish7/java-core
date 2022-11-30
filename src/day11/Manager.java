@@ -2,7 +2,8 @@ package day11;
 
 import java.time.LocalDate;
 
-public class Manager  extends  Staff{
+//public  sealed class Manager  extends  Staff permits Executive{  //Available in java 17 only
+    public class Manager extends Staff{
 
     private float bonus;
 
@@ -17,10 +18,20 @@ public class Manager  extends  Staff{
     public void setBonus(float bonus) {
         this.bonus = bonus;
     }
+
+    public void fireEmployee(){
+        //body
+    }
+
     @Override
     public float getSalary() {
         //float baseSalary = super.getSalary();
         return  bonus + super.getSalary(); //getSalary() will result into recursion calling same method over and over
+    }
+
+    @Override
+    public void getDescription() {
+        System.out.println("Description of managers");
     }
 
     @Override

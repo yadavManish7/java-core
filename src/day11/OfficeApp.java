@@ -26,7 +26,19 @@ public class OfficeApp {
         System.out.println("Staff1 salary : "+ staff1.getSalary());
         System.out.println("Staff2 salary : "+ staff2.getSalary());
 
+        Executive executive = new Executive(4,"Thiru", LocalDate.now(),60000f);
 
+        SecurityStaff securityStaff = new SecurityStaff(3,"Tarun", LocalDate.now(),600f);
+        //securityStaff.fireManagers(); //security extends Executive scenario, security cannot fire managers
+        //securityStaff.fireEmployee();// security extends Manager scenario, security cannot fire employees
+
+
+
+        securityStaff.getDescription();
+        employee.getDescription();
+        manager.getDescription();
+        executive.getDescription();  //calling parent class getDescription method
+        //System.out.println(securityStaff.getDescription());  error?
 
 
 

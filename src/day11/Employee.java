@@ -5,8 +5,15 @@ import java.time.LocalDate;
 public class Employee extends Staff  {  //inheritance is "is-a" relationships
 
     public Employee(long id, String name, LocalDate hireDate,float salary){
+
         super(id,name,hireDate,salary);
     }
+
+    @Override
+    public void getDescription() {
+        System.out.println("Description of employee");
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
