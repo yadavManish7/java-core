@@ -1,6 +1,7 @@
 package day11;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public abstract class Staff {   //we do not make objects from base class to prevent make class ABSTRACT
                                //You cannot make object from abstract class
@@ -39,6 +40,19 @@ public abstract class Staff {   //we do not make objects from base class to prev
 
     public abstract void getDescription(); //abstract function must be implemented by child classes
     //abstract function must be inside abstract class
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Staff staff = (Staff) o;
+        return id == staff.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 
     @Override
     public String toString() {
