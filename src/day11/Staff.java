@@ -22,7 +22,7 @@ public abstract class Staff {   //we do not make objects from base class to prev
         this.salary = salary;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
