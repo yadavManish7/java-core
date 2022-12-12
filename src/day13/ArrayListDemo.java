@@ -4,7 +4,6 @@ import day11.Employee;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.function.Predicate;
@@ -14,7 +13,7 @@ public class ArrayListDemo {
     public static void main(String[] args) {
 
         ArrayList intList = new ArrayList(); // we are not defining type of ArrayList to it stores objects by default
-        intList.add(2);            //AutoBoxing applied
+        intList.add(2);                     //AutoBoxing applied
         intList.add("Manish");
 
         Object test = 2 ;  // 2 will be cast to int class object
@@ -22,7 +21,7 @@ public class ArrayListDemo {
         Integer zeroPosition =(Integer) intList.get(0);  // get returns object
 
         ArrayList<String> list = new ArrayList(10);  //up to 10 data will not be copied , to optimize
-        list.ensureCapacity(50); // guess capacity no issues in future , same as initialCapacity new ArrayList(10)
+        list.ensureCapacity(50);  // guess capacity no issues in the future , same as initialCapacity new ArrayList(10)
         //list.add(2);  //only string
         list.add("A");
         list.add("B");
@@ -116,14 +115,14 @@ public class ArrayListDemo {
                 return o2.compareTo(o1);
             }
         });
-        System.out.println("Descending Ordet = "+sortList);
+        System.out.println("Descending Order = "+sortList);
 
         ArrayList<Employee> employeesSort = new ArrayList<>();
         employeesSort.add(new Employee(3,"A", LocalDate.now(),500f));
         employeesSort.add(new Employee(2,"B", LocalDate.now(),5000f));
         employeesSort.add(new Employee(1,"C", LocalDate.now(),50000f));
 
-        Collections.sort(employeesSort, new Comparator<Employee>() {
+        Collections.sort(employeesSort, new Comparator<Employee>() {  // need comparator for CUSTOM class
             @Override
             public int compare(Employee o1, Employee o2) {
                 return (o1.getId()).compareTo(o2.getId()); //CompareTO can be used to class only
